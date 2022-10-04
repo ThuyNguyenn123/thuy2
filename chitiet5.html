@@ -1,0 +1,343 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<body background="img/tuongdep.jpg" style="background-repeat:No-repeat max-height=1000%" >
+  <bodyonload="myF()">
+      <script type="text/javascript">
+    function hide_float_left() {
+        var content = document.getElementById('float_content_left');
+        var hide = document.getElementById('hide_float_left');
+        if (content.style.display == "none")
+        {content.style.display = "block"; hide.innerHTML = '<a href="javascript:hide_float_left()"> Tắt quảng cáo [X]</a>'; }
+            else { content.style.display = "none"; hide.innerHTML = '<a href="javascript:hide_float_left()">Hoạt hình thiếu nhi</a>';
+        }
+        }
+      function myF(){
+          onl.style.display = "block";
+          
+        }
+        function un(){
+            onl.style.display = "none";
+        }
+    </script>
+    <style>
+    .float-ck { position: fixed; bottom: 30px; z-index: 9000}
+    *html .float-ck {position:absolute;bottom:auto;top:expression(eval (document.documentElement.scrollTop+document.docum entElement.clientHeight-this.offsetHeight-(parseInt(this.currentStyle.marginTop,10)||0)-(parseInt(this.currentStyle.marginBottom,10)||0))) }
+    #float_content_left {border: 3px solid #01AEF0;}
+    #hide_float_left {text-align:left; font-size: 11px;}
+    #hide_float_left a {background: #01AEF0; padding: 2px 4px; color: #FFF;}
+    </style>
+  
+    <div class="float-ck" style="left: 0px">
+    <div id="hide_float_left">
+    <a href="javascript:hide_float_left()">[X]</a></div>
+    <div id="float_content_left">
+    <!-- Start quang cao-->
+    <img src="img/doraemon.jpg">
+    <!-- End quang cao -->
+    </div>
+    </div>
+    <!-- QUẢNG CÁO GIỮA -->
+        <div id="onl" style="position: fixed; bottom: 120px; top: 80px; left: 300px; z-index: 100; display: block;">
+          <div style="background-color:while ; width:700px; height:200px;">
+                <a href="javascript:un()" style="color:#F00;"> [X]</a>
+                <img src="img/shin1.webp" width="850" height="450">
+            </div>
+        </div>
+    <!-- KẾT THÚC QUẢNG CÁO GIỮA -->
+<title>Untitled Document</title>
+	 <link rel="stylesheet" href="main.css">
+	 <link rel="stylesheet" href="sanpham.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.8/css/font-awesome.min.css">
+	<link href="css/bootstrap-4.0.0.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+      <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	  <img src="img/pops.png"; width="50px"; height="50px"; style= "margin-top: fa-pull-left" >
+
+<div class="w3-container">
+		<div class="w3-bar w3-while">
+    <a href="#" class="w3-bar-item w3-button w3-hover-orange">Thiếu Nhi</a>
+    <a href="#" class="w3-bar-item w3-button w3-hover-orange">Comics</a>
+			 <a href="#" class="w3-bar-item w3-button w3-hover-orange">Anime</a>
+			 <a href="#" class="w3-bar-item w3-button w3-hover-orange">Phim</a>
+			 <a href="#" class="w3-bar-item w3-button w3-hover-orange">Âm nhạc</a>
+			 <a href="#" class="w3-bar-item w3-button w3-hover-orange">POPS Shop</a>
+    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-hover-orange">Xem Thêm</button>
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Doraemon</a>
+        <a href="#" class="w3-bar-item w3-button">Shin - Cậu bé bút chì</a>
+        <a href="#" class="w3-bar-item w3-button">Tom and Jerry</a>
+      </div>
+    </div>
+  </div>
+	</div>
+	<title>Untitled Document</title>
+
+			     <meta name="viewport" content="width=device-width, initial-scale=1">
+<script>
+  function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
+  </script>
+<div id="mySidenav" class="sidenav">
+  <a href="#" id="about"><img src="img/facebook-new.png"style width="85px"; height="50px";></a>
+  <a href="#" id="blog"><img src="img/instagram-new.png"style width="85px"; height="50px";></a>
+  <a href="#" id="projects"><img src="img/gmail.png"style width="85px"; height="50px";></a>
+  <a href="#" id="contact"><img src="img/zalo.png"style width="80px"; height="50px";></a>
+</div>
+	<!-- it works the same with all jquery version from 1.x to 2.x -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script>
+
+        jQuery(document).ready(function ($) {
+
+            var _SlideshowTransitions = [
+            //Fade
+            { $Duration: 1200, $Opacity: 2 }
+            ];
+
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                $AutoPlayInterval: 3000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideDuration: 500,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                    $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                },
+
+                $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 10,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 10,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                },
+
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(parentWidth, 1000));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+    </script>
+    <!-- Jssor Slider Begin -->
+    <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+    <div id="slider1_container" style="position: relative; top: 0px; left: 150px; width: 1000px; height: 300px; overflow: hidden; ">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left:150px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(img/loading.gif) no-repeat center center;
+                top: 0px; left:150px;width: 100%;height:100%;">
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 150px; top: 0px; width: 1000px; height: 300px; overflow: hidden;">
+            <div>
+                <img u="image" src="img/b1.jpg"/>
+            </div>
+            <div>
+                <img u="image" src="img/b2.webp"/>
+            </div>
+            <div>
+                <img u="image" src="img/cn.png" />
+            </div>           
+        </div>        
+        <!--#region Bullet Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb05" style="bottom: 16px; right: 6px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype"></div>
+        </div>
+        <!--#endregion Bullet Navigator Skin End -->
+        
+        <!--#region Arrow Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora12l" style="top: 123px; left: 0px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora12r" style="top: 123px; right: 0px;">
+        </span>
+        <!--#endregion Arrow Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
+    </div>
+    <!-- Jssor Slider End -->
+<h4>,</h4>
+	<div id="sanpham">
+	<div class="w3-container">
+<div class="w3-row" style="background-color:greyish">
+   <div class="w3-col s6">
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="img/Haibara/231.jpg" style="width:400px; height:400px">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="img/Haibara/232.jpg" style="width:400px; height:400px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="img/Haibara/233.webp" style="width:400px; height:400px">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="img/Haibara/234.jpg" style="width:400px; height:400px">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="img/Haibara/235.webp"  style="width:400px; height:400px">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="img/Haibara/236.webp"  style="width:400px; height:400px">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(1)">❯</a>
+  <a class="next" onclick="plusSlides(-1)">❮</a>
+
+  <div class="row">
+    <div class="column">
+      <img src="img/Haibara/231.jpg" width="94%" height="133" class="demo cursor" style="width:100%" onclick="currentSlide(1)">
+    </div>
+    <div class="column">
+      <img src="img/Haibara/232.jpg"  alt="Cinque Terre" width="87%" height="133" class="demo cursor" style="width:100%" onclick="currentSlide(2)">
+    </div>
+    <div class="column">
+      <img src="img/Haibara/233.webp"  alt="Mountains and fjords" width="92%" height="135" class="demo cursor" style="width:100%" onclick="currentSlide(3)">
+    </div>
+    <div class="column">
+      <img src="img/Haibara/234.jpg" alt="Northern Lights" width="165" height="137" class="demo cursor" style="width:100%" onclick="currentSlide(4)">
+    </div>
+    <div class="column">
+      <img src="img/Haibara/235.webp"  alt="Nature and sunrise" width="96%" height="134" class="demo cursor" style="width:100%" onclick="currentSlide(5)">
+    </div>    
+    <div class="column">
+      <img src="img/Haibara/236.webp"  alt="Snowy Mountains" width="103%" height="135" class="demo cursor" style="width:100%" onclick="currentSlide(6)">
+    </div>
+  </div>
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+   <p>Chia sẻ: <img src="img/social-facebook.svg" alt=""/>
+	   		 <img src="img/social-messenger.svg" alt=""/>
+	   		<img src="img/social-twitter (1).svg" alt=""/>
+	   		<img src="img/social-copy.svg" alt=""/>
+	   
+	   </p>
+	</div>
+  <div class="w3-col s6">	  
+	  <p><span style="font-size:13px; background-color:chartreuse; width:70px"> 🅵🅻🅼 </span>
+	  <h2 style="color: black;text-align: center;"> Haibara Ai</h2> </p>
+	 <h3 style="color: green;">Đánh giá:</h3>
+            <p style="color: red;text-align: left;"><b style="font-size: 30px;">5.0</b>
+			<span style="font-size: 30px;" class="fas fa-star">
+            <span class="fas fa-star">
+            <span class="fas fa-star">
+            <span class="fas fa-star">
+            <span class="fas fa-star">                    
+            </p>
+				 <h4 style="color: black;">Nội dung: </h4>
+            <h5 style="color: black;"> Khi bị teo nhỏ, Shiho sử dụng một cái tên mới là Haibara Ai. Với hình dạng mới, Haibara trốn thoát khỏi tổ chức Áo Đen và gặp được Tiến sĩ Agasa Hiroshi, người nhận nuôi cô sau này. Hiện tại, Haibara đang theo học tại trường tiểu học Teitan, cùng với Edogawa Conan/Kudo Shinichi, Yoshida Ayumi, Tsuburaya Mitsuhiko và Kojima Genta. Trong truyện, Haibara đã tìm đến nhà của Shinichi 2 lần cùng theo lệnh của Tổ chức để xác nhận cái chết của Shinichi. Lần thứ hai khi quay trở lại, cô đã đặc biệt chú ý đến một vài bộ quần áo hồi còn nhỏ của Shinichi đã bị mất và thật sự ngạc nhiên khi biết chuyện gì đang xảy ra, mặc dù trước đây thí nghiệm trên cơ thể chuột đã xảy ra trường hợp này. Haibara đã xác nhận với tổ chức rằng Shinichi Kudo thật sự đã chết. Sau khi bị teo nhỏ, cô chạy trốn đến nhà của Shinichi để tìm cậu, nhưng ngã gục trước cửa nhà của Tiến sĩ Agasa. </h5>
+            <div class="btn">
+               	<button type="button" class="btn btn-danger" style="width: 300px; height: 50px; color: green">Chi tiết</button>
+                <button type="button" class="btn btn-danger" style="width: 300px; height: 50px; color: green">Comment</button>
+   
+				
+        </div>
+	</div>
+	</div>
+</body>
+				<footer style="text-align: right;">
+                    <h4>Design by: ThuyNguyenn </h4>
+                  <h4> Email: thuynguyen2c@gmail.com </h4>
+                  <h4> Facebook : Thuynguyen </h4>
+                  <h4> Phone : 0383****** </h4>
+                  </footer>
+</html>
